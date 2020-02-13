@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a class="gl-btn">
+	  <p>Hover me!</p>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	  <span class="gl-btn-particle"></span>
+	<!--   <span class="gl-btn-particle"></span> -->
+	</a>
+	</div>
+	<script>
+		const btn = document.querySelector('.gl-btn');
+		btn.addEventListener('mouseleave', () => {
+		btn.classList.add('hoverout');		  
+		  setTimeout(() => {
+		    btn.classList.remove('hoverout')
+		  }, 1000);
+		});
+	</script>
+</body>
+</html>
