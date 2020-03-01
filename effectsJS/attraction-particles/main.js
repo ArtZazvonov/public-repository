@@ -12,9 +12,7 @@
 	const TWO_PI = 2 * Math.PI;
 	const canvas = document.querySelector(`canvas`);
 	const ctx    = canvas.getContext(`2d`);
-
 	let w, h, mouse, dots;
-
 	class Dot {
 		constructor(r){
 			this.pos   = {x: mouse.x, y: mouse.y}
@@ -30,7 +28,6 @@
 			createCircle(this.pos.x, this.pos.y, this.rad, false, config.defColor)
 		}
 	}
-
 	function updateDots(){
 		for (let i = 1; i < dots.length; i++) {
 			let acc = {x: 0, y: 0}
@@ -53,7 +50,6 @@
 		}
 		dots.map(e => e == dots[0] ? e.draw(mouse.x, mouse.y) : e.draw());
 	}
-
 	function createCircle(x, y, rad, fill, color){
 		ctx.fillStyle = ctx.strokeStyle = color;
 		ctx.beginPath();
