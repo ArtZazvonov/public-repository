@@ -54,6 +54,7 @@ function initComparisons() {
 			if (pos > w) pos = w;
 			/*выполните функцию, которая изменит размер наложенного изображения в соответствии с курсором:*/
 			slide(pos);
+			poligon(pos);
 	    }
 	    function getCursorPos(e) {
 	      var a, x = 0;
@@ -68,7 +69,7 @@ function initComparisons() {
 	    }
 		function slide(x) {
 			/*изменение размера изображения:*/
-			img.style.width = x + "px";
+			img.style.width = x + "px";		
 			/*расположите ползунок:*/
 			slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
 		}

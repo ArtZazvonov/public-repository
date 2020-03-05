@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+html,body{height: 100%;}
+section{height: 100%; display: flex; justify-content: center; align-items: center;}
+.img-comp-container {
+  position: relative;
+  width: auto;
+}
+.img-comp-overlay{
+	position: absolute;
+	overflow:hidden;
+	top: 0;
+	left: 0;
+}
+.img-comp-img img {
+	display:block;
+	vertical-align:middle;
+}
+.img-comp-slider {
+	position: absolute;
+	z-index:9;
+	cursor: pointer;
+	background-color: #2196F3;
+	width: 40px;
+	height: 40px;
+	opacity: 0.7;
+	border-radius: 50%;
+}
+/*.comparisonContainer{position: relative; max-width: 40%;}
+.comparisonContainer > img{display: block; width: 100%; height: auto;}
+.comparisonContainer .resizeImg{position: absolute; top: 0; right: 0; width: 50%; height: 100%; overflow: hidden; border-left: 1px solid #f3db58;}
+.comparisonContainer .resizeImg img{position: absolute; right: 0; top: 0; display: block; height: 100%; width: auto; max-width: none;}
+.comparisonContainer .line{width: 50px; height: 50px; position: absolute; right: 50%; top: 50%; margin: -25px -25px 0 0; background: #f3db58; border-radius: 50%; cursor: move; text-align: center; color: #fff;}
+*/
